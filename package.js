@@ -2,9 +2,9 @@ Package.describe({
   name: 'polguixe:meteor-xml3d',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'xml3D library wrapped for Meteor',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/PolGuixe/meteor-xml3d',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -12,13 +12,16 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.use('ecmascript');
-  api.addFiles('meteor-xml3d.js');
-});
 
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('polguixe:meteor-xml3d');
-  api.addFiles('meteor-xml3d-tests.js');
+  //Main Library
+  api.addFiles('lib/xml3d.js');
+  api.export('XML3D');
+
+  //Extras
+  api.addFiles([
+    'extras/xml3d-camera.js',
+    'extras/xml3d-stl-plugin.js'
+  ]);
+
+
 });
