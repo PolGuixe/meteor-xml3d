@@ -14,14 +14,14 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
 
   //Main Library
-  api.addFiles('lib/xml3d.js');
+  api.addFiles('lib/xml3d.js','client');
   api.export('XML3D');
 
   //Extras
   api.addFiles([
     'extras/xml3d-camera.js',
-    'extras/xml3d-stl-plugin.js'
-  ]);
+    'extras/xml3d-stl-plugin.js',
+  ],'client');
 
 
 });
