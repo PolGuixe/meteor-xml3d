@@ -16,4 +16,8 @@ For extra info on xml3D or Meteor please refer to their respective homepages:
 ## How to install
 Like any other Meteor package you can simply run the following from the command line:
 
-`meteor add polguixe:meteor-clipperjs`
+`meteor add polguixe:meteor-xml3d`
+
+## Release notes
+* 5.0.3 updated version number with the xml3d version number.
+* 0.0.1 initial push

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'polguixe:meteor-xml3d',
-  version: '0.0.1',
+  version: '5.0.3',
   // Brief, one-line summary of the package.
   summary: 'xml3D library wrapped for Meteor',
   // URL to the Git repository containing the source code for this package.
